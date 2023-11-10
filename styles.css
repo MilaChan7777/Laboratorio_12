@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+.navbar{
+    background-color: #222222;
+    overflow: hidden;
+    position: fixed; /* Hace que la barra sea fija en la parte superior */
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    width: 120px;
+    position: relative;
+    left: 100px;
+}
+
+.elegidos{
+    background-color: #333332;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 25%;
+    margin: 10px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.product-item img {
+    width: 100px;
+}
+
+.product-item h2 {
+    font-size: 14px;
+}
+
+button{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    width: 100px;
+    height: 25px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+
+.elegidoscover{
+    width: 50%;
+    height: 200px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+/* Estilos para el contenedor principal */
+#product-details {
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la imagen del producto */
+.product-image {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la información del producto */
+.product-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+/* Estilos para el botón de comprar */
+.comprar:hover {
+    background-color: #0056b3;
+}
+
+.star {
+    color: #ccc; /* Estrellas grises */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star.filled {
+    color: #4a81f2; /* Estrellas azules */
+}
+
+.comprar-details{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#4a81f2;
+    border: none;
+    color: whitesmoke;
+    font-size: .9rem;
+}
+
+.agregar-carrito{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e5edfa;
+    color: #4a81f2;
+    border: none;
+    font-size: .9rem;
+}
+
+.custom-icon {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #007bff; /* Color del ícono */
+    margin-right: 8px; /* Margen derecho para separar el ícono del texto, ajusta según sea necesario */
+}
+
+.icon-container {
+    display: flex;
+}
+
+.custom-icon {
+    font-size: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.custom-icon-bookmark-filled {
+    color: #ffcc00; /* Amarillo para el ícono relleno de bookmark */
+}
+
+#subtotal-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: right;
+}
